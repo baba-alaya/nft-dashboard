@@ -54,5 +54,3 @@ creator.addEventListener('click' , function(){
         switch_value.textContent = 'Top Creators'
     }
 })
-
-

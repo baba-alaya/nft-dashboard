@@ -716,7 +716,7 @@ span {
     .socials {
         width: 100%;
         z-index: 20px;
-        background-color: blue;
+        background-color:white;
         transform: translate(50vh);
     }
     
