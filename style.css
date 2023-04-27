@@ -1,0 +1,723 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* list-style: none; */
+    text-decoration: none;
+    /* border: 2px solid green; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nft {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.105);
+    display: flex;
+}
+
+.pnft {
+    height: 100vh;
+    width: 20%;
+    background-color: white;
+    padding: 30px 25px;
+    color: rgba(82, 80, 80, 0.534);
+    position: fixed;
+    overflow: scroll;
+    transition: all .2s ease-in;
+}
+
+.pnft span {
+    font-weight: 300;
+}
+
+span {
+    padding-left: 20px;
+}
+
+.img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header h3 {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+
+.header p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.dashboard {
+    padding-top: 30px;
+}
+
+.dashboard ul,
+.profile ul {
+    display: flex;
+    row-gap: 15px;
+    flex-direction: column;
+}
+
+.profile h1,
+.others h1 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.others {
+    margin-bottom: 30px;
+}
+
+.light {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.themes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    font-size: 15px;
+    width: 42px;
+    height: 19px;
+    border-radius: 45px;
+    background-color: rgba(128, 128, 128, 0.193)
+}
+
+.balance {
+    width: 80%;
+    height: 13rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(116, 5, 191, 0.355), rgba(106, 21, 181, 0.524));
+    color: white;
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.balance p {
+    font-size: 10px;
+    padding-top: 2px;
+}
+
+.balance h1 {
+    font-size: 30px;
+    z-index: 100;
+}
+
+.eth_sec img {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    border: none;
+}
+
+.eth_sec {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 15px;
+}
+
+.top_up {
+    width: 90%;
+    height: 3rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.small_eth img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+.text_eth {
+    font-size: 15px;
+}
+
+.before_img img {
+    position: absolute;
+    width: 30px;
+    opacity: 0.2;
+    left: 7px;
+    z-index: 10;
+}
+
+.after_img img {
+    position: absolute;
+    width: 60px;
+    top: 20px;
+    right: 9px;
+    z-index: 10;
+    opacity: 0.2;
+}
+
+.pnft a {
+    color: rgba(82, 80, 80, 0.534);
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    text-decoration: none;
+    padding: 0;
+}
+
+.pnft a:hover {
+    color: blueviolet;
+}
+
+.main_dashboard {
+    width: 55%;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
+    left: 274px;
+    overflow-y: scroll;
+}
+
+.search_sec {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.search {
+    width: 100%;
+    background-color: white;
+    height: 5vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.search i {
+    font-size: 20px;
+}
+
+.hero_section {
+    background-image: url(./images/nftbg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.discover {
+    width: 70%;
+    margin: auto;
+    color: white;
+    font-size: 50px;
+}
+
+.discover h1 {
+    font-size: 43px;
+}
+
+.btn-1 button,
+.btn-2 button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.btn-1 button:hover,
+.btn-2 button:hover {
+    background-color: rgba(101, 6, 189, 0.834);
+    ;
+}
+
+.btn-2 button {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.auction_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.auction_item ul {
+    display: flex;
+    font-size: 15px;
+    gap: 12px;
+    align-items: center;
+}
+
+.auction_header h1 {
+    font-size: 20px;
+}
+
+.auction_item ul a {
+    color: rgba(0, 0, 0, 0.735);
+    font-weight: 300;
+    transition: .3s ease-in all;
+}
+
+.auction_item ul a:hover {
+    color: rgb(101, 6, 189);
+    background-color: rgba(253, 240, 240, 0.663);
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 47%;
+    height: 22rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.card_img {
+    background-color: rgba(101, 6, 189, 0.45);
+    height: 25vh;
+    border-radius: 15px;
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_text h1 {
+    font-size: 20px;
+}
+
+.card_user img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.card_user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.card_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eth_logo img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.card_info {
+    padding-top: 30px;
+}
+
+.socials {
+    position: fixed;
+    right: 0px;
+    width: 25%;
+    overflow-y: scroll;
+    height: 100vh;
+    padding: 25px 10px;
+}
+
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch {
+    background-color: rgba(134, 124, 124, 0.29);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    border-radius: 40px;
+    justify-content: space-around;
+}
+
+.switch a {
+    color: black;
+}
+
+/* toggler */
+.active {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: rgba(101, 6, 189, 0.45);
+}
+
+.translate {
+    transform: translate(4vh);
+}
+
+/* toggler end */
+.notify {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.profile img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.analyse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 6vh;
+
+}
+
+.chart {
+    background-color: white;
+    width: 48%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.chart_p {
+    font-size: 13px;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding-top: 10px;
+}
+
+.currency_text {
+    font-size: 22px;
+}
+
+.currency_text b {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    border: none;
+    border: 2px solid rgba(128, 128, 128, 0.407);
+    padding: 8px 8px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.fa-arrow-up {
+    color: green;
+}
+
+.fa-arrow-down {
+    color: red;
+}
+
+.top_create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_create h1 {
+    font-size: 20px;
+}
+
+.top_create a {
+    color: black;
+}
+
+.user_img img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.user_follow button {
+    width: 50px;
+    border-radius: 20px;
+    padding: 5px 5px;
+    background-color: rgba(101, 6, 189, 0.127);
+    color: rgba(101, 6, 189, 0.834);
+    border: none;
+}
+
+.creators ol {
+    list-style: decimal !important;
+}
+
+.creators {
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.each_user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username p {
+    font-size: 10px;
+}
+
+.pone {
+    font-size: 15px !important;
+}
+
+.ptwo {
+    font-size: 12px !important;
+}
+
+.pnft a {
+    list-style: none;
+}
+
+.auction_nav a {
+    list-style: none;
+}
+
+.my_next {
+    background-color: blueviolet;;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid grey;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.my_next>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.my_next {
+    font-size: 20px;
+}
+.avatar img {
+        display: none;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 20px;
+    }
+#prev {
+    right: 10px;
+    display: none;
+}
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .pnft {
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        transform: translate(-59vh);
+        z-index: 10;
+    }
+     .translate {
+        transform: translate(0px);
+    } 
+    .main_dashboard {
+        width: 100%;
+        height: auto;
+        left: 0;
+        padding: 10px 10px;
+        /* background-color: red; */
+    }
+    .card_price {
+        padding-top: 10px;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .hero_section {
+        height: 250px;
+    }
+
+    .discover h1 {
+        font-size: 25px;
+    }
+
+    .discover {
+        width: 75%;
+    }
+
+    .auction_item ul {
+        gap: 10px;
+    }
+
+    .auction_header h1 {
+        font-size: 15px;
+    }
+    .search input::placeholder {
+        font-size: 13px;
+    }
+    .auction_item ul a {
+        color: rgba(0, 0, 0, 0.735);
+        font-weight: 500;
+        transition: .3s ease-in all;
+    }
+    
+    .avatar img {
+        display: block;
+        width: 2.5rem;
+        height:2.5rem;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+    
+    .search_sec {
+        margin-top: 20px;
+        width: 70%;
+        margin-bottom: 30px;
+    } 
+    .card {
+        width: 100%;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .my_next {
+        display: block;
+
+        top: 32px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+    #prev {
+        display: block;
+    }
+    .socials.socials_translate {
+        transform: translate(5px);
+    }
+    .socials {
+        width: 100%;
+        z-index: 20px;
+        background-color: blue;
+        transform: translate(58vh);
+    }
+    
+}
