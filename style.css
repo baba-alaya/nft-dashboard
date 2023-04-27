@@ -711,13 +711,13 @@ span {
         display: block;
     }
     .socials.socials_translate {
-        transform: translate(5px);
+        transform: translate(0px);
     }
     .socials {
         width: 100%;
         z-index: 20px;
         background-color: blue;
-        transform: translate(58vh);
+        transform: translate(50vh);
     }
     
 }
