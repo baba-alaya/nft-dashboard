@@ -31,16 +31,16 @@ avatar.addEventListener('click', function () {
     }
 })
 
-profile.addEventListener('drag', closeProfile);
-document.querySelector(".creators").addEventListener('drag', closeProfile);
-document.querySelector(".analyse").addEventListener('drag', closeProfile);
+// profile.addEventListener('drag', closeProfile);
+// document.querySelector(".creators").addEventListener('drag', closeProfile);
+// document.querySelector(".analyse").addEventListener('drag', closeProfile);
 
-function closeProfile() {
-    if (profile.classList.contains("socials_translate")) {
-        profile.classList.remove("socials_translate")
-    }
-    console.log('drag')
-}
+// function closeProfile() {
+//     if (profile.classList.contains("socials_translate")) {
+//         profile.classList.remove("socials_translate")
+//     }
+//     console.log('drag')
+// }
 
 user.addEventListener('click', function () {
     if (user.classList.contains("active")) {
