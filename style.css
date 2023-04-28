@@ -698,6 +698,7 @@ body {
 
     .socials.socials_translate {
         transform: translate(0px);
+        cursor: grab;
     }
 
     .socials {
