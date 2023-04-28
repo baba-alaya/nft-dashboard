@@ -31,16 +31,26 @@ body {
 
 .pnft span {
     font-weight: 300;
+    padding-left: 20px;
 }
 
-span {
-    padding-left: 20px;
+.pnft a {
+    color: rgba(82, 80, 80, 0.534);
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+    text-decoration: none;
+    padding: 0;
+}
+
+.pnft a:hover {
+    color: blueviolet;
 }
 
 .img img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .header {
@@ -49,15 +59,24 @@ span {
     column-gap: 20px;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
 .header h3 {
-    font-size: 25px;
-    font-weight: 800;
     color: black;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .header p {
     font-size: 13px;
     font-weight: 300;
+}
+
+#prev {
+    display: none;
 }
 
 .dashboard {
@@ -77,10 +96,6 @@ span {
     font-weight: 700;
     padding-bottom: 20px;
     padding-top: 20px;
-}
-
-.others {
-    margin-bottom: 30px;
 }
 
 .light {
@@ -107,7 +122,7 @@ span {
     border-radius: 20px;
     background-image: linear-gradient(to right, rgba(116, 5, 191, 0.355), rgba(106, 21, 181, 0.524));
     color: white;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -119,11 +134,10 @@ span {
 
 .balance p {
     font-size: 10px;
-    padding-top: 2px;
 }
 
 .balance h1 {
-    font-size: 30px;
+    font-size: 25px;
     z-index: 100;
 }
 
@@ -181,30 +195,49 @@ span {
     opacity: 0.2;
 }
 
-.pnft a {
-    color: rgba(82, 80, 80, 0.534);
-    cursor: pointer;
-    transition: .2s ease-in-out all;
-    text-decoration: none;
-    padding: 0;
-}
-
-.pnft a:hover {
-    color: blueviolet;
-}
 
 .main_dashboard {
     width: 55%;
     padding-left: 20px;
     padding-right: 10px;
     position: relative;
-    left: 274px;
+    left: 20%;
     overflow-y: scroll;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my_next {
+    background-color: blueviolet;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid grey;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.my_next>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.my_next {
+    font-size: 20px;
 }
 
 .search_sec {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 60%;
 }
 
@@ -251,7 +284,8 @@ span {
 }
 
 .discover h1 {
-    font-size: 43px;
+    font-size: 45px;
+    font-weight: 500;
 }
 
 .btn-1 button,
@@ -266,7 +300,6 @@ span {
 .btn-1 button:hover,
 .btn-2 button:hover {
     background-color: rgba(101, 6, 189, 0.834);
-    ;
 }
 
 .btn-2 button {
@@ -276,14 +309,14 @@ span {
 
 .buttons {
     display: flex;
-    gap: 40px;
+    gap: 20px;
 }
 
 .auction_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .auction_item ul {
@@ -295,19 +328,17 @@ span {
 
 .auction_header h1 {
     font-size: 20px;
+    /* width: 150%; */
 }
 
 .auction_item ul a {
     color: rgba(0, 0, 0, 0.735);
     font-weight: 300;
-    transition: .3s ease-in all;
+    transition: .2s ease all;
 }
 
 .auction_item ul a:hover {
     color: rgb(101, 6, 189);
-    background-color: rgba(253, 240, 240, 0.663);
-    border-radius: 15px;
-    padding: 5px 5px;
 }
 
 .cards {
@@ -318,13 +349,12 @@ span {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .card {
     width: 47%;
-    height: 22rem;
+    height: auto;
     background-color: white;
     border-radius: 20px;
     padding: 10px 20px;
@@ -362,14 +392,14 @@ span {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 15px;
+    padding-top: 12px;
 }
 
 .card_price {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 .price {
@@ -381,11 +411,11 @@ span {
 .eth_logo img {
     width: 20px;
     height: 20px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .card_info {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .socials {
@@ -395,6 +425,7 @@ span {
     overflow-y: scroll;
     height: 100vh;
     padding: 25px 10px;
+    transition: all .2s ease-in;
 }
 
 .top_nav {
@@ -410,25 +441,13 @@ span {
     height: 3rem;
     border-radius: 40px;
     justify-content: space-around;
+    font-size: 15px;
 }
 
 .switch a {
     color: black;
 }
 
-/* toggler */
-.active {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px 20px;
-    color: rgba(101, 6, 189, 0.45);
-}
-
-.translate {
-    transform: translate(4vh);
-}
-
-/* toggler end */
 .notify {
     width: 3rem;
     height: 3rem;
@@ -459,7 +478,7 @@ span {
 .chart {
     background-color: white;
     width: 48%;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 10px;
 }
 
@@ -475,11 +494,11 @@ span {
 }
 
 .currency_text {
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .currency_text b {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
 }
 
@@ -491,9 +510,9 @@ span {
     width: 80%;
     border: none;
     border: 2px solid rgba(128, 128, 128, 0.407);
-    padding: 8px 8px;
+    padding: 5px 5px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 .fa-arrow-up {
@@ -511,11 +530,13 @@ span {
 }
 
 .top_create h1 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .top_create a {
     color: black;
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 .user_img img {
@@ -534,15 +555,11 @@ span {
     border: none;
 }
 
-.creators ol {
-    list-style: decimal !important;
-}
-
 .creators {
     width: 100%;
     border-radius: 20px;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     margin-top: 40px;
 }
 
@@ -559,68 +576,34 @@ span {
     gap: 10px;
 }
 
-.username p {
-    font-size: 10px;
-}
-
 .pone {
-    font-size: 15px !important;
+    font-size: 15px;
 }
 
 .ptwo {
-    font-size: 12px !important;
+    font-size: 12px;
 }
 
-.pnft a {
-    list-style: none;
-}
-
-.auction_nav a {
-    list-style: none;
-}
-
-.my_next {
-    background-color: blueviolet;;
+.avatar img {
+    display: none;
     width: 2.5rem;
     height: 2.5rem;
-    border: 2px solid grey;
-    cursor: pointer;
-    outline: none;
     border-radius: 20px;
-    display: none;
 }
 
-.my_next>div {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-}
-.my_next {
-    font-size: 20px;
-}
-.avatar img {
-        display: none;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 20px;
-    }
-#prev {
-    right: 10px;
-    display: none;
-}
-.top {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-.flex {
-    display: flex;
-    align-items: center;
+/* toggler */
+.active {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: rgba(101, 6, 189, 0.45);
 }
 
+.translate {
+    transform: translate(4vh);
+}
+
+/* toggler end */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -633,32 +616,32 @@ span {
         transform: translate(-59vh);
         z-index: 10;
     }
-     .translate {
+
+    .translate {
         transform: translate(0px);
-    } 
+    }
+
     .main_dashboard {
         width: 100%;
         height: auto;
         left: 0;
         padding: 10px 10px;
-        /* background-color: red; */
     }
-    /* .card_price {
-        botttom-top: 20px;
-    } */
+
     .header {
         justify-content: space-between;
     }
+
     .hero_section {
-        height: 250px;
+        height: 30%;
     }
 
     .discover h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .discover {
-        width: 75%;
+        width: 70%;
     }
 
     .auction_item ul {
@@ -666,30 +649,33 @@ span {
     }
 
     .auction_header h1 {
-        font-size: 15px;
+        font-size: 10px;
     }
+
     .search input::placeholder {
         font-size: 13px;
     }
+
     .auction_item ul a {
         color: rgba(0, 0, 0, 0.735);
         font-weight: 500;
         transition: .3s ease-in all;
+        font-size: 10px;
     }
-    
+
     .avatar img {
         display: block;
         width: 2.5rem;
-        height:2.5rem;
+        height: 2.5rem;
         border-radius: 40px;
         object-fit: cover;
     }
-    
+
     .search_sec {
-        margin-top: 20px;
         width: 70%;
         margin-bottom: 30px;
-    } 
+    }
+
     .card {
         width: 100%;
     }
@@ -700,24 +686,39 @@ span {
 
     .my_next {
         display: block;
-
-        top: 32px;
     }
 
     .buttons {
         gap: 10px;
     }
+
     #prev {
         display: block;
     }
+
     .socials.socials_translate {
         transform: translate(0px);
     }
+
     .socials {
         width: 100%;
         z-index: 20px;
-        background-color:white;
-        transform: translate(50vh);
+        background-color: white;
+        transform: translate(60vh);
     }
-    
+
+    .btn-1 button,
+    .btn-2 button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+}
+.btn-2 button {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+    1. balance width
 }

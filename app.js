@@ -9,11 +9,12 @@ const sideBar = document.getElementById('pnft')
 const profile = document.getElementById("socials")
 
 next.addEventListener('click' , function () {
-    if(sideBar.classList.contains("translate")) {
-        sideBar.classList.remove("translate")
-    } else {
-        sideBar.classList.add("translate")
-    }
+    // if(sideBar.classList.contains("translate")) {
+    //     sideBar.classList.remove("translate")
+    // } else {
+    //     sideBar.classList.add("translate")
+    // }
+    sideBar.classList.toggle('translate')
 })
 
 prev.addEventListener('click' , function () {
@@ -29,6 +30,7 @@ avatar.addEventListener('click' , function () {
         profile.classList.add("socials_translate")
     }
 })
+
 profile.addEventListener('drag', function() {
     if(profile.classList.contains("socials_translate")) {
         profile.classList.remove("socials_translate")
@@ -37,7 +39,7 @@ profile.addEventListener('drag', function() {
 
 user.addEventListener('click' , function(){
     if(user.classList.contains("active")) {
-        user.classList.remove("active")
+        user.classList.add("active")
     } else {
         user.classList.add("active")
         creator.classList.remove("active")
@@ -47,10 +49,31 @@ user.addEventListener('click' , function(){
 
 creator.addEventListener('click' , function(){
     if(creator.classList.contains("active")) {
-        creator.classList.remove("active")
+        creator.classList.add("active")
     } else {
         creator.classList.add("active")
         user.classList.remove("active")
         switch_value.textContent = 'Top Creators'
     }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('load',function(){
+    
+    user.classList.add("active")
 })
