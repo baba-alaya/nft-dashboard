@@ -352,30 +352,6 @@ body {
     margin: 20px 0px;
 }
 
-.image_pop {
-    width: 100%;
-    /* background-color: red; */
-    border-radius: 15px;
-    position: relative;
-}
-
-.image_pop:hover .card_img  {
-    opacity: 0.9;
-}
-
-.image_pop span input {
-    position: absolute;
-    right: 35%;
-    width:35%;
-    padding: 8px 8px;
-    border-radius: 15px;
-    border: none;
-    top: 45%;
-    display: none;
-}
-.image_pop:hover span input  {
-    display: block;
-}
 .card {
     width: 47%;
     height: auto;
@@ -734,16 +710,17 @@ body {
 
     .btn-1 button,
     .btn-2 button {
-    width: 80px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    transition: all .2s ease-in-out;
-}
-.btn-2 button {
-    background-color: transparent;
-    border: 2px solid white;
-}
+        width: 80px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        transition: all .2s ease-in-out;
+    }
+
+    .btn-2 button {
+        background-color: transparent;
+        border: 2px solid white;
+    }
 
     1. balance width
 }
