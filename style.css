@@ -430,6 +430,7 @@ body {
 
 .top_nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -449,8 +450,8 @@ body {
 }
 
 .notify {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 40px;
     background-color: white;
     display: flex;
@@ -460,8 +461,8 @@ body {
 }
 
 .profile img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 40px;
     object-fit: cover;
 }
@@ -603,6 +604,26 @@ body {
     transform: translate(4vh);
 }
 
+.my_back {
+    background-color: blueviolet;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid grey;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    display: none;
+}
+
+.my_back>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
 /* toggler end */
 ::-webkit-scrollbar {
     display: none;
@@ -671,6 +692,10 @@ body {
         object-fit: cover;
     }
 
+    .profile img {
+        margin-top: 6px;
+    }
+
     .search_sec {
         width: 70%;
         margin-bottom: 30px;
@@ -684,7 +709,7 @@ body {
         gap: 20px;
     }
 
-    .my_next {
+    .my_next,.my_back {
         display: block;
     }
 
@@ -721,6 +746,10 @@ body {
         background-color: transparent;
         border: 2px solid white;
     }
+    .socials_back {
+        width: 2rem;
+        height: 2rem;
+    }
 
-    1. balance width
+    /* 1. balance width */
 }

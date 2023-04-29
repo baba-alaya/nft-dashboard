@@ -4,16 +4,12 @@ const creator = document.getElementById("creator");
 const switch_value = document.getElementById("switch_value");
 const next = document.getElementById('next');
 const prev = document.getElementById('prev');
+const myBack = document.getElementById('previous');
 const avatar = document.getElementById('avatar');
 const sideBar = document.getElementById('pnft')
 const profile = document.getElementById("socials")
 
 next.addEventListener('click', function () {
-    // if(sideBar.classList.contains("translate")) {
-    //     sideBar.classList.remove("translate")
-    // } else {
-    //     sideBar.classList.add("translate")
-    // }
     sideBar.classList.toggle('translate')
 })
 
@@ -24,25 +20,27 @@ prev.addEventListener('click', function () {
 })
 
 avatar.addEventListener('click', function () {
+    profile.classList.toggle('socials_translate')
+})
+
+myBack.addEventListener('click', function(){
     if (profile.classList.contains("socials_translate")) {
         profile.classList.remove("socials_translate")
-    } else {
-        profile.classList.add("socials_translate")
     }
 })
 
-profile.addEventListener('dragleave', closeProfile);
-document.querySelector(".creators").addEventListener('dragleave', closeProfile);
-console.log(document.querySelector(".creators"));
-document.querySelector(".analyse").addEventListener('dragleave', closeProfile);
-document.querySelector(".auction_nav").addEventListener('dragleave', closeProfile);
+// profile.addEventListener('select', closeProfile);
+// document.querySelector(".creators").addEventListener('dragleave', closeProfile);
+// console.log(document.querySelector(".creators"));
+// document.querySelector(".analyse").addEventListener('dragleave', closeProfile);
+// document.querySelector(".auction_nav").addEventListener('dragleave', closeProfile);
 
-function closeProfile() {
-    if (profile.classList.contains("socials_translate")) {
-        profile.classList.remove("socials_translate")
-    }
-    console.log('drag')
-}
+// function closeProfile() {
+//     if (profile.classList.contains("socials_translate")) {
+//         profile.classList.remove("socials_translate")
+//     }
+//     console.log('drag')
+// }
 
 user.addEventListener('click', function () {
     if (user.classList.contains("active")) {
